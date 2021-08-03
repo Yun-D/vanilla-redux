@@ -31,7 +31,7 @@ const onSubmit = e => {
   e.preventDefault();
   const toDo = input.value; //inputText에서 값 가져오기!
   input.value = "";
-  const newID = Date.now();
+  const newID = Date.now(); //state는 js 객체 및 배열로 유지되기때문에, state data에 직접 Date를 사용하지 않길 권장한다.
   store.dispatch({type: ADD_TODO, text: toDo, id: newID});
 };
 
