@@ -32,6 +32,10 @@ const reducer = (state = [], action) => {
 
 const store = createStore(reducer);
 
-store.subscribe(); //변동 사항이 생기면 모든 것을 rerender 하도록 react-redux를 사용할 것
+//store.subscribe(); //변동 사항이 생기면 모든 것을 rerender 하도록 react-redux를 사용할 것
 
+export const actionCreators = {
+    addToDO,
+    deleteToDO
+}
 export default store;
