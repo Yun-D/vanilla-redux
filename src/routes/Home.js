@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {connect} from 'react-redux';
+import ToDo from '../components/ToDo';
 import { actionCreators } from './store';
 
 function Home({toDos, addToDo}) {
@@ -19,10 +20,16 @@ function Home({toDos, addToDo}) {
             <h1>To Do</h1>
             <form onSubmit = {onSubmit}>
                 <input type="text" value={text} onChange={onChange} />
+                {/* 여기서 text는 state로 감 */}
                 <button> 추가 </button>
             </form>
 
-            <ul> {JSON.stringify(toDos)} </ul>
+            <ul> 
+                {toDos.map(toDo => ( 
+                    <ToDo {...toDo} key={toDo.id} /> 
+                ))} 
+            </ul>
+            {/* 여기서 toDos는 prop */}
         </>
     );
 }
