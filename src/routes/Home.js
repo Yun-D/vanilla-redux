@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {connect} from 'react-redux';
 import ToDo from '../components/ToDo';
-import { actionCreators } from './store';
+import { actionCreators } from '../store';
 
 function Home({toDos, addToDo}) {
     const [text, setText] = useState("");
