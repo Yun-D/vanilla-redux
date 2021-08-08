@@ -1,6 +1,6 @@
 
 # Vanilla Redux
-## 210728 ~ 210807 /
+### 210728 ~ 210807 /
 
 Nomad Coder 강의 공부. 
 Vanilla-Redux & React-Redux
