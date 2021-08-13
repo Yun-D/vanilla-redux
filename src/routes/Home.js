@@ -40,7 +40,7 @@ function mapStateToProps(state) { //redux state로부터 Home(component)에 prop
 }
 function mapDispatchToProps(dispatch) { //mapState는 필요치않고 dispatch만 필요할 경우엔 connect(null, mapDispatchToProps) 이렇게 쓰면 됨
     return {
-        addToDo: (text) => dispatch(actionCreators.addToDO(text)) //addToDo는 dispatch를 호출 / dispatch는 actionCreater를 호출. 이건 함수~! props를 만드는 것
+        addToDo: (text) => dispatch(actionCreators.addToDo(text)) //addToDo는 dispatch를 호출 / dispatch는 actionCreater를 호출. 이건 함수~! props를 만드는 것
     };
 }
 

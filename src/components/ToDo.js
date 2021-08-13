@@ -18,7 +18,7 @@ function ToDo({text, onBtnClick, id}) { //여기서 인자 {}로 잘 감싸기!!
 function mapDispatchToProps(dispatch, ownProps) {
     //ownProps 는 text와 id를 가짐
     return {
-        onBtnClick: () => dispatch(actionCreators.deleteToDO(ownProps.id)) //ownProps가 가지고 있는 id를 받아와 deleteToDo~
+        onBtnClick: () => dispatch(actionCreators.deleteToDo(ownProps.id)) //ownProps가 가지고 있는 id를 받아와 deleteToDo~
     }
 }
 
