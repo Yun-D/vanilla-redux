@@ -23,4 +23,4 @@ export const actionCreators = {
     addToDo,
     deleteToDo
 }
-export default store; //test
+export default store;
